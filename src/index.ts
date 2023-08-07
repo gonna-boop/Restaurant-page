@@ -2,7 +2,12 @@ import { homeTab } from './home';
 import { abTab } from './about';
 import { menuTab } from './menu';
 
+// let clearContainer = document.getElementById('content');
+// clearContainer.innerHTML = '';
+
+
 let tab1 = document.getElementById("home")!.addEventListener("click", () => {
+
     homeTab();
     // if (!ul) return;
     // ul.innerHTML = "";

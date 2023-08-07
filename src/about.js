@@ -2,6 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.abTab = void 0;
 var abTab = function () {
-    return console.log('test');
+    var clearContainer = document.getElementById('content');
+    clearContainer.innerHTML = '';
 };
 exports.abTab = abTab;

@@ -3,6 +3,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var home_1 = require("./home");
 var about_1 = require("./about");
 var menu_1 = require("./menu");
+// let clearContainer = document.getElementById('content');
+// clearContainer.innerHTML = '';
 var tab1 = document.getElementById("home").addEventListener("click", function () {
     (0, home_1.homeTab)();
     // if (!ul) return;

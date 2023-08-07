@@ -2,6 +2,21 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.homeTab = void 0;
 var homeTab = function () {
-    return console.log('test');
+    var clearContainer = document.getElementById('content');
+    clearContainer.innerHTML = '';
+    var homePage = document.getElementById('content');
+    var h1 = document.createElement('h1');
+    h1.textContent = "Festies Favorites Food Truck";
+    var p = document.createElement('h5');
+    p.textContent = "Serving up festival favorites since 1997!";
+    var img = document.createElement('img');
+    img.src = "./truck.jpg";
+    img.classList.add('truck');
+    var h5 = document.createElement('h5');
+    h5.textContent = "Find us at your favorite festival!";
+    homePage.appendChild(h1);
+    homePage.appendChild(p);
+    homePage.appendChild(img);
+    homePage.appendChild(h5);
 };
 exports.homeTab = homeTab;

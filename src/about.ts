@@ -1,4 +1,6 @@
 export { abTab };
 
-const abTab = () => 
-console.log('test');
+const abTab = () => {
+    let clearContainer = document.getElementById('content');
+    clearContainer.innerHTML = '';
+}

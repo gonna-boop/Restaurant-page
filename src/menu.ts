@@ -1,4 +1,6 @@
 export { menuTab };
 
-const menuTab = () => 
-console.log('test');
+const menuTab = () => {
+    let clearContainer = document.getElementById('content');
+    clearContainer.innerHTML = '';  
+}
