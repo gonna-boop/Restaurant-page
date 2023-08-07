@@ -1,11 +1,21 @@
-var opt4 = document.getElementById("array4").addEventListener("click", function () {
-    if (!ul)
-        return;
-    ul.innerHTML = "";
-    var list = new ListTemplate(ul);
-    var dayTasks = allTasks.filter(function (task) { return task.dayDif <= 31; });
-    for (var _i = 0, dayTasks_1 = dayTasks; _i < dayTasks_1.length; _i++) {
-        var t = dayTasks_1[_i];
-        list.render(t);
-    }
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var home_1 = require("./home");
+var about_1 = require("./about");
+var menu_1 = require("./menu");
+var tab1 = document.getElementById("home").addEventListener("click", function () {
+    (0, home_1.homeTab)();
+    // if (!ul) return;
+    // ul.innerHTML = "";
+    // const list = new ListTemplate(ul);
+    // const dayTasks = allTasks.filter(task => task.dayDif <= 31);
+    // for (const t of dayTasks) {
+    //   list.render(t);
+    // }
+});
+var tab2 = document.getElementById("menu").addEventListener("click", function () {
+    (0, menu_1.menuTab)();
+});
+var tab3 = document.getElementById("about").addEventListener("click", function () {
+    (0, about_1.abTab)();
 });
